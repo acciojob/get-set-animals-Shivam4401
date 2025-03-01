@@ -1,21 +1,21 @@
 //complete this code
 class Animal {
 	constructor(species){
-		this.name = species;
+		this._species = species;
 	}
 
-	get.name(){
-	  return this.name;
+	get.species(){
+	  return this._species;
 	}
 
 	makeSound(){
-		return `The ${name} makes a sound `
+		return `The ${this._species} makes a sound. `
 	}
 }
 
 class Dog extends Animal {
-	constructor(name){
-		super(name);
+	constructor(species = "Golden Retriever"){
+		super(species);
 	}
 	
 
@@ -25,8 +25,8 @@ class Dog extends Animal {
 }
 
 class Cat extends Animal {
-	constructor(name){
-		super(name);
+	constructor(species = "Siamese"){
+		super(species);
 	}
 
 	purr(){
