@@ -9,7 +9,7 @@ class Animal {
 	}
 
 	makeSound(){
-		return `The ${this._species} makes a sound. `
+		return `The ${this._species} makes a sound `
 	}
 }
 
